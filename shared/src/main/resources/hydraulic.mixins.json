@@ -10,7 +10,10 @@
     "ext.MinecraftResourcePackReaderImplMixin",
     "ext.InventoryUtilsMixin",
     "ext.LocationAwareSlf4JLoggerMixin",
-    "ext.ModelSerializerMixin"
+    "ext.ModelSerializerMixin",
+    "PolymerBlockMixin",
+    "PolymerItemMixin",
+    "PolyMcPacketHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

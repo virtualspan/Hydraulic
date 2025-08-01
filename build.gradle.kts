@@ -22,10 +22,9 @@ allprojects {
     }
 
     repositories {
-//        mavenLocal()
         mavenCentral()
 
-        maven("https://repo.opencollab.dev/main")
+        maven("https://repo.opencollab.dev/main") // ✅ Needed for GeyserMC API
         maven("https://jitpack.io") {
             content {
                 includeGroupByRegex("com\\.github\\..*")
@@ -36,3 +35,8 @@ allprojects {
         maven("https://maven.neoforged.net/releases")
     }
 }
+
+// ✅ PATCH THIS IN THE SUBPROJECT THAT CONTAINS YOUR MIXINS (likely `shared` or `fabric`):
+// dependencies {
+//     implementation("org.geysermc.geyser:api:<version>")
+// }
