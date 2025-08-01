@@ -5,8 +5,7 @@ architectury {
 dependencies {
     compileOnly(libs.mixin)
     compileOnly(libs.mixinextras)
-
-    implementation(libs.geyser.api) // ✅ Changed from compileOnly
+    compileOnly(libs.geyser.api)
     compileOnly(libs.geyser.core) {
         exclude(group = "io.netty")
         exclude(group = "io.netty.incubator")

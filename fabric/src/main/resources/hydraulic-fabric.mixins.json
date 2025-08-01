@@ -4,7 +4,10 @@
   "package": "org.geysermc.hydraulic.fabric.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "RegistrySyncManagerMixin"
+    "RegistrySyncManagerMixin",
+    "PolymerBlockMixin",
+    "PolymerItemMixin",
+    "VanillaBridgeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
