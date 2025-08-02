@@ -1,8 +1,10 @@
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // ✅ Added
+
     repositories {
-//        mavenLocal()
+        //        mavenLocal()
         mavenCentral()
 
         gradlePluginPortal()
@@ -36,6 +38,9 @@ dependencyResolutionManagement {
                 includeGroupByRegex("com\\.github\\..*")
             }
         }
+
+        // ✅ Added JitPack fallback
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
@@ -72,5 +77,4 @@ rootProject.name = "hydraulic-parent"
 include(":shared")
 include(":fabric")
 include(":neoforge")
-
 include(":test")
