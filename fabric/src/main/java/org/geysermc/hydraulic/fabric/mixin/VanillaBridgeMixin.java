@@ -1,6 +1,6 @@
 package org.geysermc.hydraulic.mixin;
 
-import com.geysermc.hydraulic.util.BedrockUtil;
+import org.geysermc.hydraulic.fabric.util.BedrockUtil;
 import dev.patbox.polymc.network.VanillaBridge;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.server.network.ServerPlayerEntity;

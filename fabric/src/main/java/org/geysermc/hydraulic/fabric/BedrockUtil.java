@@ -1,4 +1,4 @@
-package com.geysermc.hydraulic.util;
+package org.geysermc.hydraulic.fabric.util;
 
 import org.geysermc.geyser.api.GeyserApi;
 import net.minecraft.server.network.ServerPlayerEntity;
