@@ -58,5 +58,5 @@ dependencies {
     implementation(libs.geyser.api)
 
     // ✅ Patbox's PolyMC fork via JitPack
-    modImplementation("com.github.Patbox:PolyMc:dev-1.21.6-SNAPSHOT")
+    modImplementation("com.github.Patbox:PolyMc:dev~1.21.6-SNAPSHOT")
 }
