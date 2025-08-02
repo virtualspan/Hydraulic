@@ -1,4 +1,4 @@
-package org.geysermc.hydraulic.mixin;
+package org.geysermc.hydraulic.fabric.mixin;
 
 import org.geysermc.hydraulic.fabric.util.BedrockUtil;
 import dev.patbox.polymc.network.VanillaBridge;

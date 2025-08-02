@@ -37,8 +37,8 @@ tasks {
 dependencies {
     modImplementation(libs.fabric.loader)
     modApi(libs.fabric.api)
+
     common(project(":shared", configuration = "namedElements")) { isTransitive = false }
-    compileOnly(libs.geyser.api)
 
     shadow(project(path = ":shared", configuration = "transformProductionFabric")) {
         isTransitive = false
@@ -53,12 +53,10 @@ dependencies {
         exclude(group = "io.netty")
         exclude(group = "io.netty.incubator")
     }
-}
 
-sourceSets {
-    main {
-        resources {
-            srcDirs(project(":shared").sourceSets["main"].resources.srcDirs)
-        }
-    }
+    // ✅ Geyser API available at runtime
+    implementation(libs.geyser.api)
+
+    // ✅ Patbox's PolyMC fork via JitPack
+    modImplementation("com.github.Patbox:PolyMc:dev-1.21.6-SNAPSHOT")
 }
